@@ -3,6 +3,7 @@ package com.example.melanis.creacionrubrica;
 import com.orm.SugarRecord;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Melanis on 13/04/2017.
@@ -24,11 +25,11 @@ public class Curso extends SugarRecord {
         this.evaluaciones = evaluaciones;
     }
 
-    public String getName() {
-        return name;
+    public List<Estudiante> getEstudiantes(){
+        return Estudiante.find(Estudiante.class, "curso = ?", String.valueOf(this.getId()));
+    }
+    public List<Evaluacion> getEvaluaciones(){
+        return Evaluacion.find(Evaluacion.class, "curso = ?", String.valueOf(this.getId()));
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }

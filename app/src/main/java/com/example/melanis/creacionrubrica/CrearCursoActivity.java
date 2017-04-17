@@ -73,20 +73,7 @@ public class CrearCursoActivity extends AppCompatActivity {
 
 
         }
-        //Inflate ListView with student list and update student in db and arraylist
-        //*Validate if ed is empty
-        //String name= nombreestudiante.getText().toString();
-        //if(!name.isEmpty()){
-      //      Boolean state= true;
-    //        Estudiante nes = new Estudiante(name,state,eval);
-  //          nes.save();
-            //Adding to arraylist
-//            estudiantes = new ArrayList<Estudiante>(Estudiante.listAll(Estudiante.class));
 
-            //Pasarlo al adapter
-            //rowHandler.Data= estudiantes;
-          //  estudianteslv.setAdapter(rowHandler);
-        //}
 
     }
 }
